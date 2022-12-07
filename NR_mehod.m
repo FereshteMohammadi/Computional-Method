@@ -1,4 +1,5 @@
-%% The Newton Raphson Method
+%% CMiM_10_assignment
+% Simple kinematic analysis 
 % Fereshte Mohammadi Khoshoue
 
 close all;
