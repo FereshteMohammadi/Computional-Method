@@ -44,19 +44,19 @@ end
 figure(1)
 subplot(2,1,1)
 plot(time, theta);
-legend('\Theta');
+ylabel('\Theta');
 subplot(2,1,2);
 plot(time, d);
-legend('displacement');
+ylabel('d');
 xlabel('Time(s)');
 
 figure(2)
 subplot(2,1,1)
 plot(time, d_theta);
-legend('d_\Theta');
+ylabel('\Theta derivation');
 subplot(2,1,2);
 plot(time, d_d);
-legend('d_displacement');
+ylabel('d derivation');
 xlabel('Time(s)');
 
 %% Constraint Matrix
