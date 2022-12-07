@@ -43,19 +43,19 @@ end
 %% Plot
 figure(1)
 subplot(2,1,1)
-plot(time, theta);
+plot(time, theta, 'LineWidth', 2);
 ylabel('\Theta');
 subplot(2,1,2);
-plot(time, d);
+plot(time, d, 'LineWidth', 2);
 ylabel('d');
 xlabel('Time(s)');
 
 figure(2)
 subplot(2,1,1)
-plot(time, d_theta);
+plot(time, d_theta, 'LineWidth', 2);
 ylabel('\Theta derivation');
 subplot(2,1,2);
-plot(time, d_d);
+plot(time, d_d, 'LineWidth', 2);
 ylabel('d derivation');
 xlabel('Time(s)');
 
