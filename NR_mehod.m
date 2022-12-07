@@ -41,7 +41,7 @@ for t = linspace(0, 1, 101)
 end
 
 %% Plot
-figure(3)
+figure(1)
 subplot(2,1,1)
 plot(time, theta);
 legend('\Theta');
