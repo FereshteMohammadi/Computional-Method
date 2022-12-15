@@ -26,8 +26,6 @@ F2 = a * sin(phi_0) + b * sin(theta);
 theta_0 = double(theta(1));
 d_0 = double(d(1));
 
-fprintf("theta = %g rad\nd = %g\n",theta_0,d_0);
-
 X = [theta_0; d_0]; % X_0 = [theta_0, d_0];
 
 %%
