@@ -1,5 +1,5 @@
 %% CMiM_10_assignment
-% Simple kinematic analysis 
+% Simple kinematic analysis
 % Fereshte Mohammadi Khoshoue
 
 close all;
@@ -12,8 +12,23 @@ b = 0.2;
 omega = 1; %rad/s
 error = 1e-9;
 time = linspace(0, 1, 101);
-X = [pi; 0]; % X_0 = [theta_0, d_0];
 i = 1;
+phi_0 = deg2rad(30); %rad
+
+%% Initial value of theta and d
+syms theta d 
+
+F1 = a * cos(phi_0) + b * cos(theta) - d;
+F2 = a * sin(phi_0) + b * sin(theta);
+
+[theta, d] = solve(F1, F2, [theta, d]);
+
+theta_0 = double(theta(1));
+d_0 = double(d(1));
+
+fprintf("theta = %g rad\nd = %g\n",theta_0,d_0);
+
+X = [theta_0; d_0]; % X_0 = [theta_0, d_0];
 
 %%
 for t = linspace(0, 1, 101)
